@@ -1,5 +1,3 @@
-
-
 'use client'
 
 //  const LatestInternships = () => {
@@ -116,6 +114,8 @@ import { MdEngineering } from 'react-icons/md';
 import { AiOutlineTranslation } from 'react-icons/ai';
 
 import Link from 'next/link';
+import SliderForResultCards from '@/components/shared/carousel';
+import { internshipArrayCrousel } from '@/components/utils/arrays';
 
 
 
@@ -142,7 +142,7 @@ const LatestInternships = () => {
       <h1 className="font-semibold text-4xl leading-11 mb-6">
         Latest Internships
       </h1>
-      <ul className="flex flex-col items-center sm:flex-row justify-center gap-8">
+      <ul className=" flex flex-wrap flex-col items-center sm:flex-row justify-center gap-8">
         {buttons.map((button, index) => (
           <li
             key={index}
@@ -161,7 +161,7 @@ const LatestInternships = () => {
         ))}
       </ul>
       <div>
-        <h1>Other slick data</h1>
+      <SliderForResultCards carouselData={internshipArrayCrousel} />
       </div>
     </div>
   );
