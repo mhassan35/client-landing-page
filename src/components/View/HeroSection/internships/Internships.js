@@ -1,13 +1,11 @@
 'use client'
 import React, { useState } from 'react';
-
+import { BiSolidColor, BiSolidShoppingBag } from 'react-icons/bi';
 import { MdOutlineAccountBox } from 'react-icons/md';
-import { BiSolidShoppingBag ,BiSolidColor } from 'react-icons/bi';
-
 import { MdEngineering } from 'react-icons/md';
-
 import { AiOutlineTranslation } from 'react-icons/ai';
-
+import SliderForResultCards from '@/components/shared/carousel';
+import { internshipArrayCrousel } from '@/components/utils/arrays';
 import Link from 'next/link';
 
 
@@ -35,13 +33,12 @@ const LatestInternships = () => {
       <h1 className="font-semibold text-4xl leading-11 mb-6">
         Latest Internships
       </h1>
-      <ul className="flex flex-col items-center sm:flex-row justify-center gap-8">
+      <ul className=" flex flex-wrap flex-col items-center sm:flex-row justify-center gap-8">
         {buttons.map((button, index) => (
           <li
             key={index}
-            className={`px-4 py-4 rounded-md text-lg mb-2 sm:mb-0 ${
-              selectedButton === index ? 'bg-blue-700 text-white' : ' hover:bg-blue-700 text-black'
-            }`}
+            className={`px-4 py-4 rounded-md text-lg mb-2 sm:mb-0 ${selectedButton === index ? 'bg-blue-700 text-white' : ' hover:bg-blue-700 text-black'
+              }`}
           >
             <Link href="#"
               onClick={() => handleButtonClick(index)}
@@ -54,7 +51,11 @@ const LatestInternships = () => {
         ))}
       </ul>
       <div>
+<<<<<<< HEAD
         
+=======
+        <SliderForResultCards carouselData={internshipArrayCrousel} />
+>>>>>>> 89e08b8ba117d2cdbb38cda623515452b6ae1323
       </div>
     </div>
   );

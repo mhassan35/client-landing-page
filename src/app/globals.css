@@ -2,7 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 
 body{
     overflow-x: hidden;
 }
+=======
+/* .wholeSlider {
+    margin-left: 0.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .wholeSlider {
+        margin-left: 3.3rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .wholeSlider {
+        margin-left: 1.3rem;
+    }
+} */
+>>>>>>> 89e08b8ba117d2cdbb38cda623515452b6ae1323
