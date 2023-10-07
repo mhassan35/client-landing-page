@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-prop-types */
 "use client"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -13,7 +14,7 @@ import { Component } from "react";
 const NextArrow = ({ onClick }: any) => (
     <div
         onClick={onClick}
-        className="absolute top-[42%]  -right-10  lg:-right-5"
+        className="absolute top-[42%] -right-10 lg:-right-5"
     >
         <Rightarrow />
     </div>
