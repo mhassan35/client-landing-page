@@ -150,10 +150,10 @@ export default class SliderForResultCards extends Component<{ carouselData: Arra
                 <Slider {...this.settings}>
                     {/* Note: Don't remove main tag otherwise it will cause unexpacted design error */}
                     {this.props.carouselData.map((item: internshipArrayCrouselType, index: number) => (
-                        <main>
-                            <CarouselCard data={item} />
-                        </main>
-                    ))}
+                    <main key={index}>
+                        <CarouselCard data={item} />
+                     </main>
+))}
                 </Slider>
             </div>
         )
