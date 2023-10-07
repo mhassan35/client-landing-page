@@ -10,7 +10,7 @@ import ContectList from '../FooterData/ContectList'
 const Footer  = () => {
 
   return (
-    <div className='bg-[#090303] text-white pt-14 pb-3'>
+    <div className='bg-[#090303] text-white pt-32 pb-3'>
       <Wrapper className='flex justify-between flex-col md:flex-row gap-12 md:gap-0' >
 
       {/* Left Side */}
