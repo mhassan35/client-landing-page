@@ -7,6 +7,7 @@ import { AiOutlineTranslation } from 'react-icons/ai';
 import SliderForResultCards from '@/components/shared/carousel';
 import { internshipArrayCrousel } from '@/components/utils/arrays';
 import Link from 'next/link';
+import CoursesOffer from '../../CoursesOffer';
 
 
 
@@ -51,11 +52,7 @@ const LatestInternships = () => {
         ))}
       </ul>
       <div>
-<<<<<<< HEAD
-        
-=======
-        <SliderForResultCards carouselData={internshipArrayCrousel} />
->>>>>>> 89e08b8ba117d2cdbb38cda623515452b6ae1323
+        <CoursesOffer />
       </div>
     </div>
   );
