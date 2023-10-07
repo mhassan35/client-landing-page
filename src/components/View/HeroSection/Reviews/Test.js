@@ -55,14 +55,10 @@ const ProductCarousel = ({ ProductData }) => {
                 onTouchStart={mouseDownForMobile}
                 onTouchEnd={mouseUp}
             >
+
                 {/* {dataToIterate.map((item, index) => (
                     <Card key={index + 4} singleProductData={item} />
                 ))} */}
-                <li>
-                    Good
-                </li>
-                <li>
-                </li>
             </div>
         </div>
     );

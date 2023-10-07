@@ -9,8 +9,6 @@ import { MdEngineering } from 'react-icons/md';
 import { AiOutlineTranslation } from 'react-icons/ai';
 
 import Link from 'next/link';
-import FirstPage from './FirstPage';
-// import CarouselSection from './carouselSection';
 
 
 
@@ -56,7 +54,7 @@ const LatestInternships = () => {
         ))}
       </ul>
       <div>
-      <FirstPage />
+        
       </div>
     </div>
   );
